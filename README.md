@@ -1,4 +1,4 @@
-Does _Pirates of the Caribbean: Dead Man's Chest_ pass the Bechdel Test?
+Does _Pirates of the Caribbean: Dead Man's Chest_ pass the Bechdel Test? A Digital Humanities lesson for undergraduates: 
 
 # Current Status: CODE BORKEN; DONUT USE
 
