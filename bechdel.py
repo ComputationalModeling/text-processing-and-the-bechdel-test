@@ -34,4 +34,6 @@ def create_dialogue_element(line):
         return None
 
 # error: multiple repeat at position 39
-pirates_of_the_caribbean["line_of_script"].apply(create_dialogue_element)
+matched_lines = pirates_of_the_caribbean["line_of_script"].apply(create_dialogue_element)
+for match in filter(None, matched_lines):
+    print(u"{character_name}: {what_they_say}".format(**match))
