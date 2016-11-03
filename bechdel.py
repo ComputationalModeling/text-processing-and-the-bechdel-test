@@ -28,7 +28,7 @@ dialogue_pattern = re.compile(r'''(?x)
 
 def create_dialogue_element(line):
     possible_match = dialogue_pattern.match(line)
-    if possible_match and hasattr(possible_match, groupdict):
+    if possible_match:
         return possible_match.groupdict()
     else:
         return None
