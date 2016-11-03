@@ -26,8 +26,8 @@ def create_dialogue_element(line):
               .*?              #   Where what they actually say can be any characters 0 or more,
               $)               #   followed by the end of the line
     '''
-    possible_match = re.match(line, dialogue_pattern)
-    if possible_match and hasattr(possible_match, groupdict):
+    possible_match = re.match(dialogue_pattern, line)
+    if possible_match:
         return possible_match.groupdict()
     else:
         return None
