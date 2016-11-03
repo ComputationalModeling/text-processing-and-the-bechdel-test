@@ -23,7 +23,7 @@ def create_dialogue_element(line):
           :                    # followed by a colon,
           \s*                  # followed by some whitespace,
           (?P<what_they_say>   # Then create a capturing group for what the movie character actually says
-              .*?              #   Where what they actually say can be any characters 0 or more,
+              .*               #   Where what they actually say can be any characters 0 or more,
               $)               #   followed by the end of the line
     '''
     possible_match = re.match(line, dialogue_pattern)
